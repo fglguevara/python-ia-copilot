@@ -52,7 +52,7 @@ def main():
             print()
             print("¡Aquí tienes más saludos!")
             for i in range(3):
-                saludo = generar_saludo(saludos, nombres)
+                saludo = generar_saludo()
                 print(f"• {saludo}")
             print()
             print("¿Más saludos? (s/n)")

@@ -4,13 +4,11 @@
 import random
 
 
-def generar_saludo(saludos, nombres):
-    """Genera un saludo personalizado aleatorio."""
-    saludo_aleatorio = random.choice(saludos)
-    nombre_aleatorio = random.choice(nombres)
-    return f"{saludo_aleatorio} {nombre_aleatorio}!"
 
-def main():
+# Lista de nombres
+
+
+def generar_saludo():
     # Lista de saludos
     saludos = [
         "¡Hola",
@@ -21,7 +19,6 @@ def main():
         "¡Hey",
         "¡Bienvenido"
     ]
-    # Lista de nombres
     nombres = [
         "Ana",
         "Carlos",
@@ -31,16 +28,22 @@ def main():
         "Pedro",
         "Carmen",
         "Miguel",
-        "Sofía",
-        "Diego"
-    ]
+    "Sofía",
+    "Diego"
+]
+    """Genera un saludo personalizado aleatorio."""
+    saludo_aleatorio = random.choice(saludos)
+    nombre_aleatorio = random.choice(nombres)
+    return f"{saludo_aleatorio} {nombre_aleatorio}!"
+
+def main():
     """Función principal del programa."""
     print("=== Generador de Saludos Personalizados ===")
     print()
     
     # Generar y mostrar varios saludos
     for i in range(5):
-        saludo = generar_saludo(saludos, nombres)
+        saludo = generar_saludo()
         print(f"Saludo {i + 1}: {saludo}")
     
     print()
@@ -52,7 +55,7 @@ def main():
             print()
             print("¡Aquí tienes más saludos!")
             for i in range(3):
-                saludo = generar_saludo(saludos, nombres)
+                saludo = generar_saludo()
                 print(f"• {saludo}")
             print()
             print("¿Más saludos? (s/n)")
