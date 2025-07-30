@@ -39,27 +39,12 @@ def main():
     print()
     print("\n ---Añadir Nombres Personalizados ---")
     print("Introduce un nombre y pulsa Enter. Pulsa Enter sin escribir nada para terminar")
-    while True:
-        # Pedimos un nombre al usuario en cada vuelta del bucle
-        nombre_introducido = input("Añadir nombre: ")
-        # Condición de salida: si el usuario no escribe nada y pulsa "Enter"
-        if not nombre_introducido:
-            print("¡Lista de nombres finalizada")
-            break # Rompe el bucle while
-        # Limpiamos la entrada (quita espacios al inicio/final) y la añadimos a la lista
-        nombre_limpio = nombre_introducido.strip()
-        
-        # Nos aseguramos de no añadir nombres vacíos si el usuario solo introduce espacios
-        if nombre_limpio:
-            nombres.append(nombre_limpio)
-            print(f"-> ¡'{nombre_limpio}' ha sido añadido a la lista!")
-        else:
-            print("-> No se pueden añadir nombres vacíos.")
+    while 
     # Generar y mostrar varios saludos
     for i in range(5):
         saludo = generar_saludo(saludos, nombres)
         print(f"Saludo {i + 1}: {saludo}")
-    # Fin del nuevo bloque    
+    
     print()
     print("¿Quieres generar más saludos? (s/n)")
     

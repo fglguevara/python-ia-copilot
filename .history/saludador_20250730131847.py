@@ -54,12 +54,12 @@ def main():
             nombres.append(nombre_limpio)
             print(f"-> ¡'{nombre_limpio}' ha sido añadido a la lista!")
         else:
-            print("-> No se pueden añadir nombres vacíos.")
+            print("-> N")
     # Generar y mostrar varios saludos
     for i in range(5):
         saludo = generar_saludo(saludos, nombres)
         print(f"Saludo {i + 1}: {saludo}")
-    # Fin del nuevo bloque    
+    
     print()
     print("¿Quieres generar más saludos? (s/n)")
     

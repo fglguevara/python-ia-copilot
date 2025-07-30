@@ -59,7 +59,7 @@ def main():
     for i in range(5):
         saludo = generar_saludo(saludos, nombres)
         print(f"Saludo {i + 1}: {saludo}")
-    # Fin del nuevo bloque    
+    
     print()
     print("¿Quieres generar más saludos? (s/n)")
     
